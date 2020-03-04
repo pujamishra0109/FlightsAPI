@@ -23,22 +23,21 @@ public class CrazyAirRequest {
 
     private String destination;
 
+    //removed the String type from date to take LocalDate input
     @DateTimeFormat(pattern = DateUtil.ISO_LOCAL_DATE)
     @NotNull(message = "departureDate needs to be filled")
     @JsonProperty("departureDate")
-
     private LocalDate departureDate;
 
+    //removed the String type from date to take LocalDate input
     @DateTimeFormat(pattern = DateUtil.ISO_LOCAL_DATE)
     @NotNull(message = "returnDate needs to be filled")
     @JsonProperty("returnDate")
-
     private LocalDate returnDate;
 
     @NotNull(message = "number of passengers can not be blank")
     @Max(value = 4, message = "numberOfPassengers cannot be greater than 4")
     @JsonProperty("passengerCount")
-
     private int passengerCount;
     public CrazyAirRequest(){
 
@@ -92,6 +91,7 @@ public class CrazyAirRequest {
         this.passengerCount = passengerCount;
     }
 
+    //added this to print the instance if required
     @Override
     public String toString() {
         return "CrazyAirRequest{" +

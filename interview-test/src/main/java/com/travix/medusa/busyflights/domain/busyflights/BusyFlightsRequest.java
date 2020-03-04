@@ -21,11 +21,12 @@ public class BusyFlightsRequest {
     @Size(min = 3, max = 3, message = "Destination should have 3 characters")
     private String destination;
 
+    //removed the String type from date to take LocalDate as the type
     @DateTimeFormat(pattern = DateUtil.ISO_LOCAL_DATE)
-
     @NotNull(message = "departureDate needs to be filled")
     private LocalDate departureDate;
 
+    //removed the String type from date to take LocalDate as the type
     @DateTimeFormat(pattern = DateUtil.ISO_LOCAL_DATE)
     @NotNull(message = "returnDate needs to be filled")
     private LocalDate returnDate;

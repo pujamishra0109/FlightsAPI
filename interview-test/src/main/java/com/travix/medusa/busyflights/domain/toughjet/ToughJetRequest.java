@@ -25,14 +25,15 @@ public class ToughJetRequest {
     @JsonProperty("to")
     private String to;
 
+    //removed the String type from date to add LocalDate type
     @DateTimeFormat(pattern = DateUtil.ISO_LOCAL_DATE)
     @NotNull(message = "departureDate needs to be filled")
     @JsonProperty("outboundDate")
     private LocalDate outboundDate;
 
+    //removed the String type from date to add LocalDate type
     @DateTimeFormat(pattern = DateUtil.ISO_LOCAL_DATE)
     @NotNull(message = "returnDate needs to be filled")
-
     @JsonProperty("inboundDate")
     private LocalDate inboundDate;
 
@@ -93,6 +94,7 @@ public class ToughJetRequest {
         this.numberOfAdults = numberOfAdults;
     }
 
+    //added a toString()
     @Override
     public String toString() {
         return "ToughJetRequest{" +
