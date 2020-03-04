@@ -16,21 +16,17 @@ import java.util.Objects;
  */
 public class DataValidator {
 
-    public static void isValid(String origin,String dest,LocalDate departureDate,LocalDate arrivalDate,int passengers) throws InvalidDataException {
+    public static void isValid(String origin, String dest, LocalDate departureDate, LocalDate arrivalDate, int passengers) throws InvalidDataException {
 
-        if(!DateValidator.validDates(departureDate,arrivalDate))
+        if (!DateValidator.validDates(departureDate, arrivalDate))
             throw new InvalidDataException("Dates entered are past dates");
 
-        if(!DateValidator.correctArrivalDepartDates(departureDate,arrivalDate))
+        if (!DateValidator.correctArrivalDepartDates(departureDate, arrivalDate))
             throw new InvalidDataException("Arrival Date is before Departure Date");
 
 
-        if((origin==null || origin=="") ||
-                (dest==null || dest==""))
-        throw new InvalidDataException("Invalid Origin/Destination ");
-
-
-
-
+        if ((origin == null || origin == "") ||
+                (dest == null || dest == ""))
+            throw new InvalidDataException("Invalid Origin/Destination ");
     }
 }
