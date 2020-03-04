@@ -32,7 +32,7 @@ public class BusyFlightServiceImpl implements BusyFlightServices  {
     TransformSupplierRequest<FlightServicesRequest> flightServiceRequestTransformSupplierRequest;
 
     @Autowired
-    TransformSupplierResponse<FlightServicesResponse> transformSupplierResponse;
+    ResponseCollector<FlightServicesResponse> transformSupplierResponse;
 
     @Autowired
     TransformBusyFlightResponse transformBusyFlightResponse;

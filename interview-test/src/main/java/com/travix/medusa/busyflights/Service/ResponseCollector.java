@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
  * Created by Puja on 01/03/20.
  */
 @Service
-public interface TransformSupplierResponse<FlightServicesResponse> {
+public interface ResponseCollector<FlightServicesResponse> {
 
 
     public FlightServicesResponse convertSupplierResponse(FlightServicesRequest flightServicesRequest);

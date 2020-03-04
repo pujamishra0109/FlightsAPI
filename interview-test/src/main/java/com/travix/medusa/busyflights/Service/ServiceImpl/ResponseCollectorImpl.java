@@ -3,7 +3,7 @@ package com.travix.medusa.busyflights.Service.ServiceImpl;
 import com.travix.medusa.busyflights.ConstantData.CrazyAirHelper;
 import com.travix.medusa.busyflights.ConstantData.ToughJetHelper;
 import com.travix.medusa.busyflights.ConstantData.URL;
-import com.travix.medusa.busyflights.Service.TransformSupplierResponse;
+import com.travix.medusa.busyflights.Service.ResponseCollector;
 import com.travix.medusa.busyflights.Utils.DateUtil;
 import com.travix.medusa.busyflights.domain.FlightServicesRequest;
 import com.travix.medusa.busyflights.domain.FlightServicesResponse;
@@ -27,7 +27,7 @@ import java.util.*;
  * Created by Puja on 01/03/20.
  */
 @Service
-public class TransformSupplierResponseImpl implements TransformSupplierResponse<FlightServicesResponse> {
+public class ResponseCollectorImpl implements ResponseCollector<FlightServicesResponse> {
 
 
 
