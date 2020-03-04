@@ -29,16 +29,6 @@ public class DataValidator {
                 (dest==null || dest==""))
         throw new InvalidDataException("Invalid Origin/Destination ");
 
-        if(Objects.isNull(departureDate)||
-                Objects.isNull(arrivalDate))
-            throw new InvalidDataException("Invalid Origin/Destination Date");
-
-
-        if(origin.length()!=3 ||dest.length()!=3)
-            throw new InvalidDataException("Origin/Destination code should be of 3 Characters");
-
-
-        if(passengers<1 || passengers>4)
-            throw new InvalidDataException("Invalid Number of Passengers");
-    }
+        
+        }
 }
