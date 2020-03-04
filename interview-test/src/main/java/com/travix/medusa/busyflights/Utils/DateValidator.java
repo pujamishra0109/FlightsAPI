@@ -11,8 +11,6 @@ import java.util.Date;
 public class DateValidator {
 
     public static boolean correctArrivalDepartDates(LocalDate s1, LocalDate s2) {
-        System.out.println("Current Date is " +DateUtil.localDate.toString());
-
         return (s1.compareTo(s2)<=0);
     }
     public static boolean validDates(LocalDate s1,LocalDate s2){

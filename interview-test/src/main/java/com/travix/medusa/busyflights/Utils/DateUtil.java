@@ -12,7 +12,7 @@ public class DateUtil
 {
     public static final String ISO_LOCAL_DATE = "yyyy-MM-dd";
 
-    public static LocalDate localDate=LocalDate.now(ZoneId.of("UTC"));
+    public static LocalDate localDate=LocalDate.now();
 
 
     public static LocalDate getLocalDate(String s){

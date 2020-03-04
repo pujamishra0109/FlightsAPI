@@ -11,6 +11,6 @@ public class CustomComparator implements Comparator<BusyFlightsResponse> {
 
     @Override
     public int compare(BusyFlightsResponse busyFlightsResponse1,BusyFlightsResponse busyFlightsResponse2){
-        return Double.valueOf(busyFlightsResponse2.getFare()).compareTo(Double.valueOf(busyFlightsResponse1.getFare()));
+        return Double.valueOf(busyFlightsResponse1.getFare()).compareTo(Double.valueOf(busyFlightsResponse2.getFare()));
     }
 }
