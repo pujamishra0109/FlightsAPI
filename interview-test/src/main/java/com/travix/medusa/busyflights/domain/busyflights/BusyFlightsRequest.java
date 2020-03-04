@@ -14,24 +14,24 @@ public class BusyFlightsRequest {
 
 
 
-    @NotNull(message = "origin needs to be filled")
+    @NotNull(message = "Origin is missing")
     @Size(min = 3, max = 3, message = " origin should have 3 characters")
     private String origin;
-    @NotNull(message = "destination needs to be filled")
+    @NotNull(message = "Destination is missing")
     @Size(min = 3, max = 3, message = "Destination should have 3 characters")
     private String destination;
 
     //removed the String type from date to take LocalDate as the type
     @DateTimeFormat(pattern = DateUtil.ISO_LOCAL_DATE)
-    @NotNull(message = "departureDate needs to be filled")
+    @NotNull(message = "DepatureDate needs to be filled")
     private LocalDate departureDate;
 
     //removed the String type from date to take LocalDate as the type
     @DateTimeFormat(pattern = DateUtil.ISO_LOCAL_DATE)
-    @NotNull(message = "returnDate needs to be filled")
+    @NotNull(message = "ReturnDate needs to be filled")
     private LocalDate returnDate;
 
-    @NotNull(message = "number of passengers can not be blank")
+    @NotNull(message = "Number of Passengers can not be blank")
     @Max(value = 4, message = "numberOfPassengers cannot be greater than 4")
     private int numberOfPassengers;
 
