@@ -56,8 +56,6 @@ public class ResponseCollectorImpl implements ResponseCollector<FlightServicesRe
 
            ResponseEntity<CrazyAirResponse[]> response = restTemplate.getForEntity(URL.CRAZY_AIR_SEARCH_URL,CrazyAirResponse[].class,
                    map);
-           System.out.print("crazy air response " +" "+ response.getBody());
-
            if(response.getStatusCode()!=HttpStatus.OK)
                return new ArrayList<CrazyAirResponse>(null);
 
