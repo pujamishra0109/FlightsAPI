@@ -1,6 +1,6 @@
 # Puja_Travix_Interview_Test
 
-Link to the Readme Document: https://docs.google.com/document/d/1XlTUTwhJrLKw3dw-POg04HCr1uPW0OMFWjQbfTVn9O4/edit?usp=sharing
+Link to the Readme Document: https://drive.google.com/open?id=1vsPwqcDYyjowNCmPygUhfrHKc1zUFzF-
 
 BusyFlight Service 
 
